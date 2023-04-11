@@ -1,37 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fun(int num)
+int fun(int s,int m,int num)
 {
-    int s1=0,s2=1;
-    printf("%d ",s1);
-    while(s2!=num)
+    if(m!=num && m<=num)
     {
-        int temp;
-        temp=s1;
-        s1=s2;
-        s2+=temp;
-        printf("%d ",s2);
+        printf("%d ",m);
+        int temp=m;
+        m+=s;
+        s=temp;
+        fun(s,m,num);
     }
+    if(s+m==num){printf("%d",num);}
 }
 int main()
 {
-    int num;
+    int num,pre;
     printf("Please Enter the Number here : ");
     scanf("%d",&num);
-    if(num==0)
-    {
-        printf("0");
-        return 0;
-    }
-    else if(num==1)
-    {
-        printf("0 1");
-        return 0;
-    }
-    else
-    {
-        fun(num);
-    }
+    if(num<0){printf("Error");return 0;}
+    printf("0 ");
+    fun(0,1,num);
     return 0;
 }
