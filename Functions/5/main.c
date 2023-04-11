@@ -15,7 +15,7 @@ int fun(int s,int m,int num)
 }
 int main()
 {
-    int num,pre;
+    int num;
     printf("Please Enter the Number here : ");
     scanf("%d",&num);
     if(num<0){printf("Error");return 0;}
