@@ -1,41 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#define ulli unsigned long long int
-
 int main()
 {
     // Take Inputs
-	int n=0;
+	int n=0,m=0;
 	printf("Please Enter the size of The Array : ");
 	scanf("%d",&n);
 	int a[n];
-	int x=0;
-	int p=1;
-	int m=0;
 	for(int i=0;i<n;i++)
     {
-        printf("Enter the Number of index [%d] : ",i);
-        scanf("%d",&x);
-        if(i==0)
-        {
-            a[i]=x;
-        }
-        else
-        {
-            for(int j=i;j>-1;j--)
-            {
-            if(x==a[j]){p=0;m++;break;}
-            }
-            if(p==1){a[i]=x;}
-        }
-        p=1;
+        scanf("%d",&a[i]);
     }
-    // Output
-    printf("The Unique elements are : ");
-    for(int i=0;i<n-m;i++)
+    int b[n];
+    b[0]=a[0];
+    for(int i=1;i<n;i++)
     {
-        printf("%d ",a[i]);
+        for(int j=0;j<m+1;j++)
+        {
+            if(b[j]==a[i])
+            {
+                break;
+            }
+            if(j==m)
+            {
+                b[++m]=a[i];
+            }
+        }
+    }
+    for(int i=0;i<m+1;i++)
+    {
+        printf("%d ",b[i]);
     }
 
     return 0;
