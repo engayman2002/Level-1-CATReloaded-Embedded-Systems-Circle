@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1694175842 source:d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\infix_to_postfix_using_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

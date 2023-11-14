@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1694160451 source:d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Global.h"
+	"Stack.h"
+	"Queue.h"
+
+1694160460 d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\global.h
+
+1694158896 d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\stack.h
+	"Global.h"
+
+1694159099 d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\queue.h
+	"Global.h"
+
+1694158653 source:d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\stack.c
+	"Stack.h"
+	<stdlib.h>
+
+1694159046 source:d:\faculty teams\cat reloaded\level 2\level_2_cat_reloaded_embedded_circle\third assignment\the project\queue.c
+	"Queue.h"
+	<stdlib.h>
+
